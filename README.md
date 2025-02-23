@@ -63,32 +63,27 @@ git clone https://github.com/sameerkumar2907/uploadify.git
 cd backend
 ```
 
-### 2. Install dependencies
-```bash
-yarn install
-```
-
-### 3. Start the PostgreSQL container
+### 2. Start the PostgreSQL container
 ```bash
 docker-compose up -d
 ```
 
-### 4. Install dependencies
+### 3. Install dependencies
 ```bash
 yarn install
 ```
 
-### 5. Create a .env file in backend/ and add:
+### 4. Create a .env file in backend/ and add:
 ```bash
 DATABASE_URL=postgresql://user:password@localhost:5432/dbname
 ```
 
-### 6. Run migrations:
+### 5. Run migrations:
 ```bash
 npx prisma migrate dev --name init
 ```
 
-### 7. Start the server
+### 6. Start the server
 ```bash
 yarn dev
 ```
